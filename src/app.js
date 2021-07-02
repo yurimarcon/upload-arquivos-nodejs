@@ -5,10 +5,10 @@ const crypto = require('crypto')
 
 const app = express();
 const upload = multer({
-    dest: path.resolve(__dirname,'..','uploads'),
+    dest: path.resolve(__dirname,'uploads'),
     storage: multer.diskStorage({
         destination: (req,file,cb) =>{
-            cb(null, path.resolve(__dirname,'..','tmp'))
+            cb(null, path.resolve(__dirname,'uploads'))
         },
         filename:(req,file,cb)=>{
             crypto.randomBytes(16,(err, hash)=>{
@@ -52,4 +52,4 @@ app.post('/', upload.single('file'),(req, res)=>{
     })
 })
 
-app.listen(3000);
+app.listen(3002);

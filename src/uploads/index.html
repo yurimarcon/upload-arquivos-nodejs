@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js" integrity="sha512-JxJpoAvmomz0MbIgw9mx+zZJLEvC6hIgQ6NcpFhVmbK1Uh5WynnRTTSGv3BTZMNBpPbocmdSJfldgV5lVnPtIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <style>
+        #myChart{
+            max-width: 400px;
+            max-height: 500px;
+        }
+        #myChart2{
+            margin: 5%;
+            max-width: 300px;
+            max-height: 400px;
+        }
+        #myChart3{
+            margin: 5%;
+            max-width: 300px;
+            max-height: 400px;
+        }
+    </style>
+    <div style="display: flex; padding: 2%;">
+        <canvas id="myChart"></canvas>
+        <canvas id="myChart2"></canvas>
+        <canvas id="myChart3"></canvas>
+    </div>
+    <script src='bars.js'></script>
+    <script src='pie.js'></script>
+    <script src='doughnut.js'></script>
+</body>
+</html>
